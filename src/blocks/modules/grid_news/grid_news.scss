@@ -8,11 +8,13 @@
         // position: sticky;
         // top: 50px;
         height: 100%;
+        grid-auto-rows: 242px 501px;
         @media all and (max-width: $sm) {
             grid-template-areas:
             'small1'
             'small2'
             'big';
+            grid-auto-rows: auto;
         }
     }
     &__item {
