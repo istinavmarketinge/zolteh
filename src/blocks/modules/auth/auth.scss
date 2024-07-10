@@ -21,6 +21,12 @@
     }
     &__form-field {
         max-width: 390px;
+        &--full {
+            max-width: none;
+            @media all and (min-width: $sm) {
+                grid-column: 1 / span var(--columns, 1);
+            }
+        }
         &--captcha {
             max-width: 100%;
             @media all and (min-width: $sm) {
