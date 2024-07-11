@@ -10,11 +10,11 @@
             gap: 10px;
         }
         &--backgrounded {
-            padding: 10px;
+            padding: 20px;
             border-radius: 5px;
             background: #F4F4F4;
             @media all and (max-width: $sm) {
-                padding: 8px;
+                padding: 10px;
             }
         }
         &:before {
@@ -62,7 +62,8 @@
         }
     }
     &__items {
-        padding-top: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -152,6 +153,7 @@
         }
     }
     &__image {
+        font-size: 0;
         @media all and (max-width: $sm) {
             position: relative;
             padding-top: 62%;
