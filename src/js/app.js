@@ -177,15 +177,12 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
     
-    if (document.querySelector('.tophead_banner__opener--js')) {
-        document.querySelector('.tophead_banner__opener--js').addEventListener('click', (event) => {
-            event.currentTarget.closest('.tophead_banner_image__in').classList.toggle('isOpened');
-        })
-    }
 
     if (document.querySelector('.tophead_banner_image__opener--js')) {
-        document.querySelector('.tophead_banner_image__opener--js').addEventListener('click', (event) => {
-            event.currentTarget.closest('.tophead_banner_image__in').classList.toggle('isOpened');
+        document.querySelectorAll('.tophead_banner_image__opener--js').forEach(banner => {
+            banner.addEventListener('click', (event) => {
+                event.currentTarget.closest('.tophead_banner_image__in').classList.toggle('isOpened');
+            })
         })
     }
 

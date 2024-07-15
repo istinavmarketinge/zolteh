@@ -20,7 +20,7 @@
         }
     }
     &__image {
-        height: 71px;
+        height: 70px;
         font-size: 0;
         transition: all .3s ease;
         @media all and (max-width: $sm) {
@@ -37,7 +37,7 @@
         transform: rotate(180deg);
     }
     &__in.isOpened &__image {
-        height: 231px;
+        height: 230px;
         @media all and (max-width: $sm) {
             height: 136px;
         }
