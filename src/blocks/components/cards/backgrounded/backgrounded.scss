@@ -3,18 +3,23 @@
     padding: 35% 40px 30px 40px;
     text-decoration: none;
     display: block;
+    height: 100%;
+    box-sizing: border-box;
     @media all and (max-width: $sm) {
         padding: 34% 10px 10px 10px;
     }
     &--reversed {
         padding: 30% 40px 40px 40px;
+        @media all and (min-width: $md) {
+            min-height: 495px;
+        }
     }
     &--small {
         padding: 27% 20px 20px 20px;
     }
     &--with_button  {
         padding: 20px !important;
-        height: 470px;
+        min-height: 470px;
         @media all and (max-width: $sm) {
             gap: 10px;
             height: 336px;
