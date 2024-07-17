@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 selector: slider,
                 options: {
                     gap: 20,
-                    perView: 3,
+                    perView: 4,
                     bound: true,
                     breakpoints: {
                         1366: {
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
             event.target.parentElement.querySelector('.js-Dropdown-list--custom').classList.toggle('is-open');
         })
     })
-    
+
 
     if (document.querySelector('.tophead_banner_image__opener--js')) {
         document.querySelectorAll('.tophead_banner_image__opener--js').forEach(banner => {

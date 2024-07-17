@@ -17,7 +17,7 @@
     &--small {
         padding: 27% 20px 20px 20px;
     }
-    &--with_button  {
+    &--with_button {
         padding: 20px !important;
         min-height: 470px;
         @media all and (max-width: $sm) {
@@ -53,7 +53,6 @@
         left: 0;
         bottom: 0;
         right: 0;
-        
         img {
             width: 100%;
             height: 100%;
@@ -99,12 +98,12 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
-        line-height: 140%; /* 25.2px */
+        line-height: 140%;
+        /* 25.2px */
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
-        max-width: 425px;
         @media all and (max-width: $sm) {
             font-size: 16px;
         }
@@ -118,7 +117,8 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 140%; /* 25.2px */
+        line-height: 140%;
+        /* 25.2px */
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 2;

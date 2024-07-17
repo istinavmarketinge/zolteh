@@ -17,4 +17,9 @@
         min-width: 100%;
         max-width: 100%;
     }
+    .card_backgrounded {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 }
