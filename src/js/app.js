@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 selector: slider,
                 options: {
                     gap: 20,
-                    perView: 4,
+                    perView: 3,
                     bound: true,
                     breakpoints: {
                         1366: {
