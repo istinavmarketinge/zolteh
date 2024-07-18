@@ -1,10 +1,8 @@
 $containerPadding: 20px;
 $containerWidth: 1620px;
-
 $lg: 1025px;
 $md: 1024px;
 $sm: 768px;
-
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -16,12 +14,15 @@ body {
         object-position: 50% 50%;
     }
 }
+
 * {
     text-decoration: none;
 }
+
 .overflow-hidden {
     overflow: hidden;
 }
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -56,7 +57,15 @@ body {
         }
     }
 }
+
 .general {
+    &__video_column_pagination {
+        cursor: pointer;
+        &.glide__bullet--active {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    }
     &__container {
         width: 100%;
         max-width: calc($containerWidth + $containerPadding * 2);
@@ -197,7 +206,6 @@ body {
                 grid-gap: 10px;
             }
         }
-
         &--column-reverse-mobile {
             @media all and (max-width: $sm) {
                 display: flex;
@@ -388,7 +396,8 @@ body {
             font-size: 18px;
             // font-style: normal;
             // font-weight: 400;
-            line-height: 140%; /* 25.2px */
+            line-height: 140%;
+            /* 25.2px */
             @media all and (max-width: $sm) {
                 font-size: 14px;
                 line-height: 143%;
@@ -409,7 +418,6 @@ body {
                 border-radius: 0;
                 border: 2px solid #a3a3a3;
                 padding: 0 20px;
-
                 color: #000;
                 font-size: 18px;
                 font-style: normal;
@@ -483,7 +491,6 @@ body {
             gap: 30px;
         }
     }
-
     &__rows_news_detail {
         .detail__short_descrition {
             color: #646464;
@@ -511,7 +518,8 @@ body {
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 140%; /* 19.6px */
+        line-height: 140%;
+        /* 19.6px */
         text-decoration-line: underline;
     }
     .arrow {
@@ -526,15 +534,7 @@ body {
     text-decoration: none;
     padding: 15px 38px;
     border-radius: 10px;
-    background: linear-gradient(0deg, #fff 0%, #fff 100%),
-        linear-gradient(
-            90deg,
-            #ac731a -34.96%,
-            #bd8e3e 0.13%,
-            #f8edaf 58.12%,
-            #bd8e3e 103.97%,
-            #ac731a 138.12%
-        );
+    background: linear-gradient(0deg, #fff 0%, #fff 100%), linear-gradient( 90deg, #ac731a -34.96%, #bd8e3e 0.13%, #f8edaf 58.12%, #bd8e3e 103.97%, #ac731a 138.12%);
     color: #000;
     text-align: center;
     font-size: 18px;
@@ -545,14 +545,13 @@ body {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    & > span {
+    &>span {
         pointer-events: none;
     }
     @media all and (max-width: $sm) {
         font-size: 18px;
         padding: 16px 18px 17px;
     }
-
     .arrow {
         width: 14px;
         font-size: 0;
@@ -601,11 +600,13 @@ body {
         display: none !important;
     }
 }
+
 .hide_on_mobile {
     @media all and (max-width: $md) {
         display: none !important;
     }
 }
+
 .glide__slides {
     white-space: unset;
 }
@@ -620,19 +621,16 @@ body * {
         width: 10px;
         height: 10px;
     }
-
     /* Track */
     &::-webkit-scrollbar-track {
         border-radius: 36px;
         background: rgba(210, 210, 210, 0.28);
     }
-
     /* Handle */
     &::-webkit-scrollbar-thumb {
         border-radius: 36px;
         background: #959595;
     }
-
     /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
         background: #959595;
@@ -652,7 +650,7 @@ body * {
         //     display: none;
         // }
     }
-    & > .js-Dropdown {
+    &>.js-Dropdown {
         z-index: 3;
         @media all and (min-width: $sm) {
             display: none;
@@ -702,7 +700,8 @@ body * {
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 140%; /* 28px */
+                line-height: 140%;
+                /* 28px */
             }
         }
     }
@@ -715,7 +714,8 @@ body * {
             font-size: 20px;
             font-style: normal;
             font-weight: 700;
-            line-height: 140%; /* 28px */
+            line-height: 140%;
+            /* 28px */
         }
     }
     .card_regular__description {
@@ -725,7 +725,8 @@ body * {
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
-            line-height: 140%; /* 22.4px */
+            line-height: 140%;
+            /* 22.4px */
         }
     }
 }
@@ -737,11 +738,11 @@ body * {
             font-size: 20px;
             font-style: normal;
             font-weight: 700;
-            line-height: 140%; /* 28px */
+            line-height: 140%;
+            /* 28px */
         }
     }
 }
-
 
 .general__row_investments {
     .tabs__titles {
