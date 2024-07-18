@@ -13,7 +13,7 @@ export const svgSprites = () => {
                 stack: {
                     sprite: `../icons/icons.svg`,
                     // Создавать страницу c примерами иконок
-                    example: false
+                    example: true
                 }
             }
         }))

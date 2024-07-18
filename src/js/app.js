@@ -11,11 +11,23 @@ import Header from '../blocks/modules/header/header.js';
 import Modals from '../blocks/modules/modals/modals.js';
 import Search from '../blocks/modules/search/search.js';
 import Calendar from '../blocks/components/calendar/calendar.js';
+import Video from '../blocks/modules/video/video.js';
 import { Slider } from './modules/classes.js';
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/s/player/8eff86d5/www-widgetapi.vflset/www-widgetapi.js";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+
+
+
     globalFunctions.transferItems();
     globalFunctions.addTabsChangeHandler({
         openerDataSelector: 'tab-id',
@@ -106,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }),
+        video: new Video(),
         videos: new Slider({
             selector: '.video__glide--js',
             options: {
@@ -204,5 +217,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelector('.slider_gallery__thumbs').style.height = `${height}px`;
             }, 0)
         })
+
     }
+
+
 });
+
+
+window.onYouTubeIframeAPIReady = () => {
+    window.app.video.init();
+}
